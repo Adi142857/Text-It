@@ -6,7 +6,17 @@ import { auth } from '../firebase';
 import { useAuth } from '../contexts/AuthContext';
 import axios from 'axios';
 
-const Chats = () => {
+/*const Chats = () => {
+    const history = useHistory();
+    const { user } = useAuth();
+    const [loading, setLoading] = useState(true);
+
+    const handleLogout = async () => {
+        await auth.signOut();
+
+        history.push('/');
+    }*/
+    const Chats = () => {
     const history = useHistory();
     const { user } = useAuth();
     const [loading, setLoading] = useState(true);
